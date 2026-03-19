@@ -282,7 +282,7 @@ if ($tableCheck->num_rows == 0) {
         <div class="header">
             <h2><i class="fas fa-pray"></i> KSUSDA PRAYER REQUEST DASHBOARD</h2>
             <p style="margin: 5px 0 0 0; opacity: 0.8;">All prayer requests submitted by members</p>
-        </div>
+        </div>  
         
         <div class="stats-bar">
             <?php

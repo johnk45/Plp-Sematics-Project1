@@ -10,7 +10,7 @@ try {
     
     // Check if the prayer_requests table exists, create if not
     $tableCheck = $pdo->query("SHOW TABLES LIKE 'prayer_requests'");
-    if ($tableCheck->rowCount() == 0) {
+    if ($tableCheck->rowCount() == 0) 
         // Create the table if it doesn't exist
         $createTableSQL = "
         CREATE TABLE IF NOT EXISTS prayer_requests (
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $error = "❌ Failed to submit your prayer request. Please try again.";
             }
         } catch(PDOException $e) {
-            $error = "❌ Database error: " . $e->getMessage();
+            $error = "Database error: " . $e->getMessage();
         }
     }
 }
@@ -370,8 +370,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         return true;
     }
     
-    // Remove the problematic setTimeout
-    // setTimeout(()=>{
-    //     document.style.background="#ff7200";
-    // },5000);
+  ;
 </script>
