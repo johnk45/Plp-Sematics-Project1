@@ -664,6 +664,38 @@ padding: 60px 0;
             from { transform: translateX(0); opacity: 1; }
             to { transform: translateX(100%); opacity: 0; }
         }
+        /* Daily Verse Popup */
+    .verse-popup {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      padding: 1.5rem;
+      width: 90%;
+      max-width: 400px;
+      z-index: 1000;
+      text-align: center;
+      animation: fadeIn 0.5s ease-in;
+    }
+    .verse-popup h3 {color: #004d40; margin-bottom: 0.8rem;}
+    .verse-popup button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #004d40;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translate(-50%, -10%);}
+      to {opacity: 1; transform: translate(-50%, 0);}
+    }
+
     </style>
 </head>
 <body>
@@ -860,6 +892,26 @@ padding: 60px 0;
             </div>
         </div>
     </footer>
+    <!--Verse pop up-->
+<div class="verse-popup" id="versePopup">
+  <h3>Daily verse</h3><p id="verseText"></p>
+  <button onclick="document.getElementById('versePopup').style.display='none'">Close</button>
+<script>
+   // ---- Daily Verse Popup ----
+  const verses = [
+  "Philippians 4:13 - I can do all things through Christ who strengthens me.",
+  "Psalm 23:1 - The Lord is my shepherd; I shall not want.",
+  "Isaiah 40:31 - But they that wait upon the lord shall renew their strength ;they shall mount up with wings as eagles;they shall run , and not be weary ;they shall walk , and not faint.",
+  "Romans 8:28 - And we know all things work together for good to them that love the lord, to them who are called according to his purpose.",
+  "Matthew 5:14 - Ye are the light of the world.A city that is set on an hill cannot be hid."
+  ];
+  function showVerse() {
+  const verse = verses[Math.floor(Math.random() * verses.length)];
+  document.getElementById("verseText").textContent = verse;
+  document.getElementById("versePopup").style.display = "block";
+  }
+  setTimeout(showVerse, 5000);
+  </script>
 
     <script>
         // Sermon Data - This will be loaded first

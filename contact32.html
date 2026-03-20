@@ -683,7 +683,7 @@ button.btn-submit {
     
     @media (max-width: 768px) {
       body{
-        font-size:0.85rem;
+        font-size:1.1rem;
         width:100%;
         
       }
@@ -700,12 +700,11 @@ button.btn-submit {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       }
       .footer-content{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
-        gap:10px;
+       display:flex;
+       flex-direction:column;
       }
-      .footer-logo h3{font-size:1rem;}
-      .footer-links h3{font-size:0.98rem;}
+      .footer-logo h3{font-size:1.1rem;}
+      .footer-links h3{font-size:1.1rem;}
       nav ul.active {
         display: flex;
       
@@ -944,7 +943,7 @@ button.btn-submit {
 
 
 
-<div class="container py-5">
+<div class="container py-5 " style="font-family: sans-serif;">
     <div class="card shadow-sm form-card p-4">
         <h5 class="text-center mb-4 fw-semibold">Borrow Church Materials</h5>
 
@@ -964,14 +963,15 @@ button.btn-submit {
                     <div class="form-floating">
                         <select class="form-select" id="ministry" required>
                             <option value="" selected disabled>Select Ministry</option>
-                            <option value="choir">Choir Ministry</option>
-                            <option value="youth">Youth Ministry</option>
-                            <option value="pathfinders">Pathfinders</option>
-                            <option value="women">Women Ministry</option>
-                            <option value="men">Men Ministry</option>
+                            <option value="choir">First Fruit Ministry</option>
+                            <option value="youth">New Zion Ministry</option>
+                            <option value="pathfinders">Christ Messanger</option>
+                             <option value="pathfinders">Medical Missionary Department</option>
+                            <option value="women">ALO</option>
+                            <option value="men">AMO</option>
                             <option value="children">Children Ministry</option>
                             <option value="media">Media / PA Team</option>
-                            <option value="evangelism">Evangelism Team</option>
+                            <option value="evangelism">ETH</option>
                             <option value="other">Other</option>
                         </select>
                         <label for="ministry">Ministry / Group</label>
