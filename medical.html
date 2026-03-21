@@ -739,6 +739,82 @@
         padding: 1.2rem;
     }
 }
+
+  /* About Intro */
+  .about{
+    margin:20px auto;
+    width:100%;
+    background-color: #ffffff;
+    padding:30px 40px;
+    border-radius: 8px;
+    align-items:center;
+  }
+  .about h2{
+    padding:10px;
+    font-size:2rem;
+    text-align:center;
+  }
+  .about p{
+    padding:8px;
+    max-width:800px;
+    margin:auto;
+    text-align: center;
+    
+    font-size:1.2rem;
+  }
+        .about-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+            align-items: center;
+            
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1.1rem;
+            text-align:initial;
+        }
+
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            height: 400px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+        .cards{
+            display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+        }
+        .content{
+            border:none;
+            border-radius:5px;
+            padding:10px 10px;
+            background-color:  #e3f2fd;
+            box-shadow:1px 2px 5px rgb(13, 114, 208);
+        }
+      
     </style>
 </head>
 <body>
@@ -834,7 +910,46 @@
             </div>
         </div>
     </section>
-
+<!-- About Intro -->
+ <div class="about">
+     <h2>About Our Department</h2>
+            <p>The Medical Missionary Department at Kisii University SDA Church combines spiritual ministry with healthcare excellence</p>
+        
+        <section class="about-intro">
+              <div class="about-image">
+                <img src="https://i.pinimg.com/736x/ca/02/11/ca0211bb12d6cd622f88f8e48a38110f.jpg" alt="KSUSDA Church Gathering">
+            </div>
+            <div class="about-content">
+                <h2>Our Mission</h2>
+               <p>To train and equip students and church members in the art of medical missionary work, following the example of Christ who went about doing good and healing all who were oppressed.</p>
+               <p>We believe that the gospel and health ministry go hand in hand, and through our programs, we reach communities with both physical healing and spiritual hope.</p>
+               <p>Our department serves as a bridge between the university's academic excellence and the church's mission to serve humanity in need</p>
+            
+          
+        </section>
+        <div class="cards">
+            <div class="content">
+                <i class="fas fa-horn"></i>
+                <h2>Compassion Care</h2>
+                <p>Provide Care with christ love and empathy</p>
+            </div>
+            <div class="content">
+                <i class="fas fa-horn"></i>
+                <h2>Excellence</h2>
+                <p>Committed to the highest Standards of Medical Practise</p>
+            </div>
+            <div class="content">
+                <i class="fas fa-horn"></i>
+                <h2>Community Focus</h2>
+                <p>Serving the needs of our local and global communities</p>
+            </div>
+            <div class="content">
+                <i class="fas fa-horn"></i>
+                <h2>Education</h2>
+                <p>Training the next Generation of medical missionaries</p>
+            </div>
+        </div>
+    </div>
     <!-- Remedies Section -->
     <section class="remedies" id="remedies">
         <div class="remedies-container">
