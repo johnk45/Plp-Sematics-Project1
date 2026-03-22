@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="image/assetss/style.css">
     <style>
         
@@ -814,6 +815,29 @@
             background-color:  #e3f2fd;
             box-shadow:1px 2px 5px rgb(13, 114, 208);
         }
+        .content h2{
+            font-size:1.5rem;
+        }
+        .content p{
+            font-size:1rem;
+        }
+        .content i{
+            font-size:1.8rem;
+            border-radius:50%;
+            background-color: #1877f2;
+            padding:10px;
+            display:flex;
+            align-items:center;
+            margin:0 auto;
+            justify-content:center;
+            color:white;
+            height:50px;width:50px;
+        }
+        .fas{
+        
+            margin:0 auto;
+        }
+
       
     </style>
 </head>
@@ -829,7 +853,7 @@
         <div class="header-container">
             <div class="logo">
                 <image src="image/assetss/kisiilogo-removebg-preview.png" alt="KSUSDA church" height="80" width="80"></image>
-               <h2 style="color:#1e90ff;font-weight: 700;">KSUSDA <span style="color:#1a6370;">Medical</span><span style="color:#e74c3c;">Missionary</span></h2>
+               <h2 style="color:#1e90ff;font-weight: 500;font-size:1.4rem;">Medical Missionary<br><span style="font-size:1.1rem;font-weight: normal;color:black;">Kisii university</span></h2>
                
                
             </div>
@@ -920,7 +944,7 @@
                 <img src="https://i.pinimg.com/736x/ca/02/11/ca0211bb12d6cd622f88f8e48a38110f.jpg" alt="KSUSDA Church Gathering">
             </div>
             <div class="about-content">
-                <h2>Our Mission</h2>
+                <h2 class="fs-2 text-black">Our Mission</h2>
                <p>To train and equip students and church members in the art of medical missionary work, following the example of Christ who went about doing good and healing all who were oppressed.</p>
                <p>We believe that the gospel and health ministry go hand in hand, and through our programs, we reach communities with both physical healing and spiritual hope.</p>
                <p>Our department serves as a bridge between the university's academic excellence and the church's mission to serve humanity in need</p>
@@ -929,27 +953,102 @@
         </section>
         <div class="cards">
             <div class="content">
-                <i class="fas fa-horn"></i>
+                <i class="fas fa-heart"></i>
                 <h2>Compassion Care</h2>
                 <p>Provide Care with christ love and empathy</p>
             </div>
             <div class="content">
-                <i class="fas fa-horn"></i>
+                <i class="fas fa-bullseye"></i>
                 <h2>Excellence</h2>
                 <p>Committed to the highest Standards of Medical Practise</p>
             </div>
             <div class="content">
-                <i class="fas fa-horn"></i>
-                <h2>Community Focus</h2>
-                <p>Serving the needs of our local and global communities</p>
+                <i class="fas fa-users"></i>
+                <h2 class="fs-4 text-black">Community Focus</h2>
+                <p class="fs-6">Serving the needs of our local and global communities</p>
             </div>
             <div class="content">
-                <i class="fas fa-horn"></i>
+                <i class="fas fa-book"></i>
                 <h2>Education</h2>
                 <p>Training the next Generation of medical missionaries</p>
             </div>
         </div>
     </div>
+    </div>
+
+    <!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<section class="py-5 bg-light">
+  <div class="container">
+    
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Programs & Services</h2>
+      <p class="text-muted">Comprehensive care and training programs designed to serve and empower communities</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Community Health Outreach -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="fas fa-sterhescope"></i>Community Health Outreach</h5>
+            <p class="text-muted small fs-5">Free medical camps, health screenings, and preventive care in underserved communities</p>
+            <ul class="list-unstyled">
+            <ul class="list-unstyled fs-6">
+  <li><i class="fas fa-check-circle text-success me-2"></i>Monthly health camps</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Blood pressure & diabetes screening</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Health education seminars</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Home visits for elderly</li>
+</ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical Training -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="fw-bold fs-3">Medical Training Programs</h5>
+            <p class="text-muted small fs-5">Comprehensive training in basic medical skills and health ministry</p>
+                   <ul class="list-unstyled fs-6">
+  <li><i class="fas fa-check-circle text-success me-2"></i>Monthly health camps</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Blood pressure & diabetes screening</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Health education seminars</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Home visits for elderly</li>
+</ul>
+      
+          </div>
+        </div>
+      </div>
+
+      <!-- Lifestyle Medicine -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="fw-bold fs-3">Lifestyle Medicine</h5>
+            <p class="text-muted small fs-5">Promoting the 8 laws of health (NEWSTART) for disease prevention</p>
+                  <ul class="list-unstyled fs-6">
+  <li><i class="fas fa-check-circle text-success me-2"></i>Monthly health camps</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Blood pressure & diabetes screening</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Health education seminars</li>
+  <li><i class="fas fa-check-circle text-success me-2"></i>Home visits for elderly</li>
+</ul>
+      
+          </div>
+        </div>
+      </div>
+
+      
+    
+
+    </div>
+  </div>
+</section>
+
+
     <!-- Remedies Section -->
     <section class="remedies" id="remedies">
         <div class="remedies-container">
