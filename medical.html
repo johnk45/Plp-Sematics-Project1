@@ -190,7 +190,7 @@
         }
 
         .remedies-container {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
         }
 
@@ -503,6 +503,7 @@
     margin-top: 3rem;
     border-top: 1px solid var(--lighter-gray);
     border-bottom: 1px solid var(--lighter-gray);
+    width:100%;
 }
 
 #medical-missionary .section-title h2 {
@@ -1048,6 +1049,18 @@
   </div>
 </section>
 
+<section class="container leaders-section w-100" id="medical-missionary">
+    <div class="section-title">
+        <h2>Medical Missionary Leaders</h2>
+        <p class="section-subtitle">Dedicated professionals combining healthcare with spiritual ministry</p>
+    </div>
+    
+    <div class="medical-leaders-grid" id="medicalLeadersContainer">
+        <!-- Medical missionary leader cards will be loaded here -->
+    </div>
+
+
+
 
     <!-- Remedies Section -->
     <section class="remedies" id="remedies">
@@ -1071,20 +1084,11 @@
             </div>
         </div>
     </section>
-    <!-- Add this section after your existing leaders section -->
-
-<section class="container leaders-section" id="medical-missionary">
-    <div class="section-title">
-        <h2>Medical Missionary Leaders</h2>
-        <p class="section-subtitle">Dedicated professionals combining healthcare with spiritual ministry</p>
-    </div>
     
-    <div class="medical-leaders-grid" id="medicalLeadersContainer">
-        <!-- Medical missionary leader cards will be loaded here -->
-    </div>
     
     <div class="medical-description">
-        <h3><i class="fas fa-heartbeat"></i> About Medical Missionary Ministry</h3>
+        <i class="fas fa-heartbeat"></i>
+        <h3> Training and Education</h3>
         <p>The Medical Missionary ministry combines healthcare expertise with spiritual guidance to serve both physical and spiritual needs. Our leaders are trained healthcare professionals who provide medical services, health education, and spiritual support to our congregation and community.</p>
         
         <div class="medical-services">
@@ -1354,9 +1358,7 @@ const medicalMissionaryLeaders = [
         name: "Moffat Omondi",
         role: "Head of Department",
         qualification: "Manage and Co-ordinate the Department",
-        specialty: "Nutrition & Community Health",
         photo: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&h=300&fit=crop&crop=face",
-        description: "Experienced medical missionary leader with a background in community health and nutrition. Oversees department operations and leads health outreach initiatives.",
         social: {
             facebook: "https://facebook.com/drkariuki",
             email: "dr.kariuki@kisiisda.ac.ke"
@@ -1367,9 +1369,7 @@ const medicalMissionaryLeaders = [
         name: "Ruth Kemunto",
         role: "MM Secretary",
         qualification: "Write and read minutes of the department meetings",
-        specialty: "Healthy & Nutrious food expert",
         photo: "image/video/visit.jpg",
-        description: "Responsible for cooking and providing healthy meals during medical camps and events. Also manages department documentation and communication.",
         social: {
             facebook: "https://facebook.com/drgrace",
             email: "g.wanjiku@kisiisda.ac.ke"
@@ -1378,11 +1378,9 @@ const medicalMissionaryLeaders = [
     {
         id: 3,
         name: "John Katana",
-        role: "Illnesses Handling Specialist",
-        qualification: "Handle and manage diseases and illnesses using natural remedies",
-        specialty: "Disease Management",
+        role: "MM Deacon",
+        qualification: "Manage remedies and equipments",
         photo: "image/victor.jpg",
-        description: "Specializes in managing common illnesses using natural remedies. Provides guidance on treatment options and supports patients through their healing journey.",
         social: {
             facebook: "https://facebook.com/dromondi",
             email: "p.katana@kisiisda.ac.ke"
@@ -1392,10 +1390,8 @@ const medicalMissionaryLeaders = [
         id: 4,
         name: " Sarah Muthoni",
         role: "Health Education Specialist",
-        qualification: "MM Patron",
-        specialty: "Health Education",
+        qualification: "KSUSDA MM Patron",
         photo: "image/church audotorium.jpg",
-        description: "Focuses on preventive healthcare and wellness education",
         social: {
             facebook: "https://facebook.com/drsarah",
             email: "s.muthoni@kisiisda.ac.ke"
@@ -1406,9 +1402,7 @@ const medicalMissionaryLeaders = [
         name: " James Otieno",
         role: "Health Consultant in KSUSDA",
         qualification: "Conduct guidance and counselling on matters Health ",
-        specialty: "Guidance & Couselling",
         photo: "image/christ messangers.jpg",
-        description: "Leads consulation programs and medical missionary outreach programs",
         social: {
             facebook: "https://facebook.com/drjames",
             email: "j.otieno@kisiisda.ac.ke"
@@ -1418,10 +1412,8 @@ const medicalMissionaryLeaders = [
         id: 6,
         name: "Elizabeth Achieng",
         role: "Health Meals consultant",
-        qualification: "Provide healthy meals during medical camps and events",
-        specialty: "Meals & Nutrition",
+        qualification: "Teaches people on hoe to prepare healthy meals",
         photo: "image/community health screening.jpeg",
-        description: "Provides healthy meals during medical camps and events, ensuring that patients receive proper nutrition to support their healing process.Also offers nutritional guidance to promote overall wellness.",
         social: {
             facebook: "https://facebook.com/drelizabeth",
             email: "e.achieng@kisiisda.ac.ke"
@@ -1440,11 +1432,9 @@ function loadMedicalMissionaryLeaders() {
             <img src="${leader.photo}" alt="${leader.name}" class="medical-leader-photo">
             <h4 class="medical-leader-name">${leader.name}</h4>
             <p class="medical-leader-role">${leader.role}</p>
-            <p class="medical-leader-qualification">${leader.qualification}</p>
-            <span class="medical-leader-specialty">${leader.specialty}</span>
-            <p class="medical-leader-desc" style="font-size: 0.85rem; color: #666; margin: 0.5rem 0 1rem;">
-                ${leader.description}
-            </p>
+            <p class="medical-qualification">${leader.qualification}</p>
+           
+        
             <div class="medical-leader-social">
                 <a href="${leader.social.facebook}" target="_blank" rel="noopener noreferrer" 
                    title="Connect with ${leader.name} on Facebook">

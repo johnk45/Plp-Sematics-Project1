@@ -10,7 +10,7 @@ try {
     
     // Check if the prayer_requests table exists, create if not
     $tableCheck = $pdo->query("SHOW TABLES LIKE 'prayer_requests'");
-    if ($tableCheck->rowCount() == 0) 
+    if ($tableCheck->rowCount() == 0){
         // Create the table if it doesn't exist
         $createTableSQL = "
         CREATE TABLE IF NOT EXISTS prayer_requests (
@@ -26,7 +26,9 @@ try {
         
         $pdo->exec($createTableSQL);
     }
-} catch(PDOException $e) {
+    }
+    
+catch(PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
 
